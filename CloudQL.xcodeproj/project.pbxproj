@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A4C39A5451306F47AF4A4F6 /* Pods_CloudQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F13BD31388A73A05EECADE /* Pods_CloudQL.framework */; };
 		C2608CA7200298CF00FADD95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2608CA6200298CF00FADD95 /* AppDelegate.swift */; };
 		C2608CA9200298CF00FADD95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2608CA8200298CF00FADD95 /* ViewController.swift */; };
 		C2608CAB200298CF00FADD95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2608CAA200298CF00FADD95 /* Assets.xcassets */; };
 		C2608CAE200298CF00FADD95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2608CAC200298CF00FADD95 /* Main.storyboard */; };
+		C2608CBA20029A2800FADD95 /* ScreenDim.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2608CB920029A2800FADD95 /* ScreenDim.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AA1351004741558797EA9BD /* Pods-CloudQL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudQL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudQL/Pods-CloudQL.debug.xcconfig"; sourceTree = "<group>"; };
+		24F13BD31388A73A05EECADE /* Pods_CloudQL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudQL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2608CA3200298CF00FADD95 /* CloudQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2608CA6200298CF00FADD95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2608CA8200298CF00FADD95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +25,8 @@
 		C2608CAD200298CF00FADD95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2608CAF200298CF00FADD95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2608CB0200298CF00FADD95 /* CloudQL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudQL.entitlements; sourceTree = "<group>"; };
+		C2608CB920029A2800FADD95 /* ScreenDim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDim.swift; sourceTree = "<group>"; };
+		FD123F0B5B54F2B5698C5270 /* Pods-CloudQL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudQL.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudQL/Pods-CloudQL.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A4C39A5451306F47AF4A4F6 /* Pods_CloudQL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		214CA1FF6E624AB75F3B1F72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24F13BD31388A73A05EECADE /* Pods_CloudQL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B60F76B6EE36ADC3BE8152C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AA1351004741558797EA9BD /* Pods-CloudQL.debug.xcconfig */,
+				FD123F0B5B54F2B5698C5270 /* Pods-CloudQL.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C2608C9A200298CF00FADD95 = {
 			isa = PBXGroup;
 			children = (
 				C2608CA5200298CF00FADD95 /* CloudQL */,
 				C2608CA4200298CF00FADD95 /* Products */,
+				9B60F76B6EE36ADC3BE8152C /* Pods */,
+				214CA1FF6E624AB75F3B1F72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,14 +79,39 @@
 		C2608CA5200298CF00FADD95 /* CloudQL */ = {
 			isa = PBXGroup;
 			children = (
-				C2608CA6200298CF00FADD95 /* AppDelegate.swift */,
-				C2608CA8200298CF00FADD95 /* ViewController.swift */,
+				C2608CB8200299F100FADD95 /* Controller */,
+				C2608CB7200299EB00FADD95 /* View */,
+				C2608CB6200299DF00FADD95 /* Model */,
 				C2608CAA200298CF00FADD95 /* Assets.xcassets */,
-				C2608CAC200298CF00FADD95 /* Main.storyboard */,
 				C2608CAF200298CF00FADD95 /* Info.plist */,
 				C2608CB0200298CF00FADD95 /* CloudQL.entitlements */,
 			);
 			path = CloudQL;
+			sourceTree = "<group>";
+		};
+		C2608CB6200299DF00FADD95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2608CA6200298CF00FADD95 /* AppDelegate.swift */,
+				C2608CAC200298CF00FADD95 /* Main.storyboard */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2608CB7200299EB00FADD95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2608CA8200298CF00FADD95 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2608CB8200299F100FADD95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2608CB920029A2800FADD95 /* ScreenDim.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,9 +121,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2608CB3200298CF00FADD95 /* Build configuration list for PBXNativeTarget "CloudQL" */;
 			buildPhases = (
+				ED07CF9E39A72C98F1630662 /* [CP] Check Pods Manifest.lock */,
 				C2608C9F200298CF00FADD95 /* Sources */,
 				C2608CA0200298CF00FADD95 /* Frameworks */,
 				C2608CA1200298CF00FADD95 /* Resources */,
+				EB7E38927C333B3DF8AF49A5 /* [CP] Embed Pods Frameworks */,
+				1423332B259611F75E9B8886 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,12 +183,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1423332B259611F75E9B8886 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudQL/Pods-CloudQL-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB7E38927C333B3DF8AF49A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudQL/Pods-CloudQL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED07CF9E39A72C98F1630662 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudQL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C2608C9F200298CF00FADD95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C2608CA9200298CF00FADD95 /* ViewController.swift in Sources */,
+				C2608CBA20029A2800FADD95 /* ScreenDim.swift in Sources */,
 				C2608CA7200298CF00FADD95 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +367,7 @@
 		};
 		C2608CB4200298CF00FADD95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA1351004741558797EA9BD /* Pods-CloudQL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CloudQL/CloudQL.entitlements;
@@ -276,6 +383,7 @@
 		};
 		C2608CB5200298CF00FADD95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD123F0B5B54F2B5698C5270 /* Pods-CloudQL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CloudQL/CloudQL.entitlements;

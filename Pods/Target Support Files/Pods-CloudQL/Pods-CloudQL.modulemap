@@ -1,0 +1,6 @@
+framework module Pods_CloudQL {
+  umbrella header "Pods-CloudQL-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -12,7 +12,7 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        buildUI()
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +22,16 @@ class ViewController: NSViewController {
         }
     }
 
+    func buildUI() {
+        func setScreenInitialDims() {
+            let origin = NSPoint(x: 20, y: 20)
+            let size = NSSize(width: ScreenDim.sWidth, height: ScreenDim.sHeight)
+            view.setFrameSize(size)
+            view.setFrameOrigin(origin)
+        }
+        
+        setScreenInitialDims()
+    }
 
 }
 
