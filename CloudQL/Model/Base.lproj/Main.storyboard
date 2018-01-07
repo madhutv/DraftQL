@@ -709,26 +709,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <splitView arrangesAllSubviews="NO" dividerStyle="paneSplitter" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ete-ir-pxh" userLabel="Vertical Split View">
+                            <splitView arrangesAllSubviews="NO" dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ete-ir-pxh" userLabel="Vertical Split View">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                                 <subviews>
                                     <customView fixedFrame="YES" id="QFL-6i-WZk" userLabel="Left View">
-                                        <rect key="frame" x="0.0" y="0.0" width="132" height="270"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="270"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </customView>
                                     <customView id="7CZ-Bo-1Zy" userLabel="Right View">
-                                        <rect key="frame" x="142" y="0.0" width="338" height="270"/>
+                                        <rect key="frame" x="117" y="0.0" width="363" height="270"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
-                                            <splitView arrangesAllSubviews="NO" dividerStyle="paneSplitter" translatesAutoresizingMaskIntoConstraints="NO" id="Bsc-jZ-6dz" userLabel="Horizontal Split View">
-                                                <rect key="frame" x="0.0" y="0.0" width="338" height="270"/>
+                                            <splitView arrangesAllSubviews="NO" dividerStyle="thin" translatesAutoresizingMaskIntoConstraints="NO" id="Bsc-jZ-6dz" userLabel="Horizontal Split View">
+                                                <rect key="frame" x="0.0" y="0.0" width="363" height="270"/>
                                                 <subviews>
-                                                    <customView fixedFrame="YES" id="fTH-Ss-RLY" userLabel="Top View">
-                                                        <rect key="frame" x="0.0" y="0.0" width="338" height="185"/>
+                                                    <customView id="fTH-Ss-RLY" userLabel="Top View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="363" height="195"/>
                                                         <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jMw-Kh-6Zy">
+                                                                <rect key="frame" x="5" y="40" width="353" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="s7q-rl-BK4">
+                                                                    <font key="font" metaFont="system"/>
+                                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                </textFieldCell>
+                                                            </textField>
+                                                            <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fPA-SO-Knj">
+                                                                <rect key="frame" x="140" y="-1" width="82" height="41"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="Hwv-L0-m8a"/>
+                                                                    <constraint firstAttribute="width" constant="70" id="QlV-bU-CDS"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="push" title="Submit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ghe-Xv-Fp3">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="fPA-SO-Knj" firstAttribute="centerX" secondItem="fTH-Ss-RLY" secondAttribute="centerX" id="KmT-Xd-aeY"/>
+                                                        </constraints>
                                                     </customView>
                                                     <customView fixedFrame="YES" id="Dfj-oy-tId" userLabel="Bottom View">
-                                                        <rect key="frame" x="0.0" y="195" width="338" height="75"/>
+                                                        <rect key="frame" x="0.0" y="196" width="363" height="74"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </customView>
                                                 </subviews>
@@ -759,6 +784,9 @@
                             <constraint firstAttribute="bottom" secondItem="ete-ir-pxh" secondAttribute="bottom" id="yWI-vq-wno"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="submitButtonOutlet" destination="Ghe-Xv-Fp3" id="vY1-tv-WSO"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

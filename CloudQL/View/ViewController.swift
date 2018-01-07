@@ -10,6 +10,8 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    
+    @IBOutlet weak var submitButtonOutlet: NSButtonCell!
     override func viewDidLoad() {
         super.viewDidLoad()
         buildUI()
@@ -29,8 +31,11 @@ class ViewController: NSViewController {
             view.setFrameSize(size)
             view.setFrameOrigin(origin)
         }
-        
+        func setButtonView() {
+            submitButtonOutlet.backgroundColor = NSColor.green
+        }
         setScreenInitialDims()
+        setButtonView()
     }
 
 }
