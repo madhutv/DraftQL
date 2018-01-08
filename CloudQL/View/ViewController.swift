@@ -37,6 +37,27 @@ class ViewController: NSViewController {
         setScreenInitialDims()
         setButtonView()
     }
-
+    
+    
+    @IBAction func submitButtonClicked(_ sender: Any) {
+        print("World Peace")
+        let task = Process()
+        let pipe = Pipe()
+        task.executableURL = URL(fileURLWithPath: "{Path to Scala executable}")
+        task.arguments = ["{path to jar file}"]
+        task.standardOutput = pipe
+        do {
+            try task.run()
+        }
+        catch {
+           print(error)
+        }
+        let handle = pipe.fileHandleForReading
+        let data = handle.readDataToEndOfFile()
+        let printing = String (data: data, encoding: String.Encoding.utf8)
+        print(printing!)
+        
+    }
+    
 }
 

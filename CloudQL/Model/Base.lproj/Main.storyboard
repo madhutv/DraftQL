@@ -746,6 +746,9 @@
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="submitButtonClicked:" target="XfG-lQ-9wD" id="xlj-Qb-diy"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
